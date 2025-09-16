@@ -1,5 +1,8 @@
 import { test, expect } from "vitest";
 import { createCalculator } from "../lib/Calculator"; 
+import { describe } from "node:test";
+
+describe("Calculator", () => {  
 
 test("Adderar två tal korrekt", () => {
   const calculator = createCalculator();
@@ -19,3 +22,5 @@ test("Dividerar två tal korrekt", () => {
   const calculator = createCalculator();
   expect(calculator.divide(987, 654)).toBe(1.5091743119266055);
 }); 
+
+})
